@@ -43,7 +43,7 @@ namespace ConstantDatabase.Dumper
                     outStream.Write(buffer, 0, buffer.Length);
                     outStream.Write(key, 0, key.Length);
                     outStream.Write(keyValueSeparator, 0, keyValueSeparator.Length);
-                    outStream.Write(data, 0, keyValueSeparator.Length);
+                    outStream.Write(data, 0, data.Length);
                     outStream.Write(newLine, 0, newLine.Length);
                 }
 
