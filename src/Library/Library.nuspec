@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Emanuel Dejanu, Alexandru Iuga</authors>
+    <owners>Emanuel Dejanu, Alexandru Iuga, Michael Alyn Miller</owners>
+    <licenseUrl>https://github.com/emanueldejanu/CDB.NET/wiki/Licence</licenseUrl>
+    <projectUrl>https://github.com/emanueldejanu/CDB.NET/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2014 Emanuel Dejanu</copyright>
+    <tags>CDB Constant Database TinyCDB</tags>
+  </metadata>
+</package>
