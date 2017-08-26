@@ -64,7 +64,7 @@ namespace System.Data.ConstantDatabase
         /// </summary>
         public void Dispose()
         {
-            cdbStream.Close();
+            cdbStream.Dispose();
         }
 
         /* Returns the next data element in the CDB file. */

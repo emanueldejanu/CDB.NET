@@ -115,7 +115,7 @@ namespace System.Data.ConstantDatabase
         {
             if (fileStream != null)
             {
-                fileStream.Close();
+                fileStream.Dispose();
                 fileStream = null;
             }
         }

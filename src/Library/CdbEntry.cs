@@ -36,7 +36,6 @@ namespace System.Data.ConstantDatabase
     /// <summary>
     /// CdbElement represents a single entry in a constant database.
     /// </summary>
-    [Serializable]
     public sealed class CdbEntry
     {
         /// <summary>The key value for this entry.</summary>

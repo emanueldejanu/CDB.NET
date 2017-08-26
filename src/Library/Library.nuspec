@@ -2,16 +2,17 @@
 <package >
   <metadata>
     <id>System.Data.ConstantDatabase</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Constant Database</title>
     <authors>Emanuel Dejanu, Alexandru Iuga</authors>
     <owners>Emanuel Dejanu, Alexandru Iuga, Michael Alyn Miller</owners>
+    <iconUrl>https://github.com/emanueldejanu/CDB.NET/blob/master/src/Library/nuget_icon.png?raw=true</iconUrl>
     <licenseUrl>https://github.com/emanueldejanu/CDB.NET/wiki/Licence</licenseUrl>
     <projectUrl>https://github.com/emanueldejanu/CDB.NET/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>.NET implementation of CDB.</description>
+    <description>.NET implementation of CDB (Constant Database).</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2014 Emanuel Dejanu</copyright>
-    <tags>CDB Constant Database TinyCDB</tags>
+    <copyright>Copyright © Emanuel Dejanu 2017</copyright>
+    <tags>cdb constant database tinycdb keyvalue storage</tags>
   </metadata>
 </package>

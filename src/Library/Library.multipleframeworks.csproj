@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;net461;net46;net452;net451;net45;net40;net35;net20;netcoreapp1.1;netcoreapp1.0;netstandard1.3;netstandard1.4</TargetFrameworks>
+    <RootNamespace>System.Data.ConstantDatabase</RootNamespace>
+    <AssemblyName>System.Data.ConstantDatabase</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>Emanuel Dejanu, Alexandru Iuga</Authors>
+    <Company>UCB</Company>
+    <Product>Constant Database</Product>
+    <Description>.NET implementation of CDB (Constant Database).</Description>
+    <Summary>.NET implementation of CDB.</Summary>
+    <Copyright>Copyright © Emanuel Dejanu 2017</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Title>CDB (Constant Database) for .NET</Title>
+    <PackageId>System.Data.ConstantDatabase</PackageId>
+    <PackageTags>cdb constant database tinycdb keyvalue storage</PackageTags>
+    <PackageIconUrl>https://github.com/emanueldejanu/CDB.NET/blob/master/src/Library/nuget_icon.png?raw=true</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/emanueldejanu/CDB.NET/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/emanueldejanu/CDB.NET/wiki/Licence</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/emanueldejanu/CDB.NET.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

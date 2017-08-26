@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  */
 
-using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
 namespace System.Data.ConstantDatabase
@@ -46,7 +46,7 @@ namespace System.Data.ConstantDatabase
         private Stream fileStream;
 
         /// <summary>The list of hash pointers in the file, in their order in the constant database.</summary>
-        private readonly ArrayList hashPointers;
+        private readonly List<CdbHashPointer> hashPointers;
 
         /// <summary>The number of entries in each hash table.</summary>
         private readonly int[] tableCount;
@@ -56,7 +56,7 @@ namespace System.Data.ConstantDatabase
 
 
         /// <summary>The position of the current key in the constant database.</summary>
-        private int currentKeyPos = -1;
+        private int currentKeyPos;
 
         /// <summary>
         /// Constructs a CdbMake object and begins the constant database creation process.
@@ -67,7 +67,8 @@ namespace System.Data.ConstantDatabase
         public CdbWriter(string filePath)
         {
             /* Initialize the class. */
-            hashPointers = new ArrayList();
+            currentKeyPos = -1;
+            hashPointers = new List<CdbHashPointer>();
             tableCount = new int[256];
             tableStart = new int[256];
 
@@ -210,7 +211,7 @@ namespace System.Data.ConstantDatabase
             fileStream.Write(slotTable, 0, slotTable.Length);
 
             /* Close the file. */
-            fileStream.Close();
+            fileStream.Dispose();
             fileStream = null;
         }
 
